@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+html {
+box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+font-family: 'Courier New', Courier, monospace;
+color: black;
+background-color: antiquewhite;
+font-size: 18px;
+margin:0;
+}
+h1 {
+    color: blue;
+    font: bold 2.2em Times, serif;
+}
+h2 {
+    color: blue;
+    font: bold 1.2em Times, serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+p {
+    color: navy;
+}
+main {
+    margin:0px;
+}
+img {
+    max-width: 100%;
+}
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 3px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+/*NAVIGATION BAR*/
+.nav_bar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: navy;
+    padding: .3em;
+    margin: 0px;
+}
+.nav_bar a {
+    color: white;
+    padding: 22px 40px;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    background-color: white;
+    color: navy;
+}
+li.logo {
+max-width: 70px;
+max-height: 70px;
+}
+
+/*INDEX - HOME PAGE*/
+.hero_image {
+background-image: linear-gradient(rgba(47, 46, 46, 0), rgba(0,0,0,0.4)), url(images/images/garden/austin_curtis.jpg);
+height: 700px;
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;}
+
+.hero_header {
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align:left;
+position: absolute;
+color: white;
+top: 40%;
+text-shadow: .05em .05em .1em black;
+font-size: 3em;
+margin: 20px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas: 
+'welcome welcome welcome'
+'hl1 hl1 hl1' 
+'hl2 hl3 hl4'
+'hours hours hours';
+}
+
+#welcome{
+    grid-area: welcome;
+    object-fit: cover;
+}
+#hlight1 {
+    grid-area: hl1;
+    object-fit: cover;
+}
+#hlight2 {
+    grid-area: hl2;
+    object-fit: cover;
+}
+#hlight3 {
+    grid-area: hl3;
+    object-fit: cover;
+}
+#hlight4 {
+    grid-area: hl4;
+    object-fit: cover;
+}
+#hours {
+grid-area: hours;
+object-fit: cover;
+}
+
+#welcome, #hlight4 {
+    margin: 0px 15px 0px 30px;
+    padding: 60px 0px 
+}
+/*ABOUT PAGE*/
+
+/*MENU PAGE*/
+
+/*GALLERY*/
+
+/*CONTACT*/
